@@ -63,6 +63,14 @@
 	        
 			</ul>
 		</nav>
+
+<div class="search-wrap">
+          <input class="search-ipt" q-model="search" type="text" placeholder="Search" q-on="click: openSlider(e, 'innerArchive')">
+
+          <i class="icon-search icon" q-show="search|isEmptyStr"></i>
+          <i class="icon-close icon" q-show="search|isNotEmptyStr" q-on="click:clearChose(e)"></i>
+        </div>
+
 		<nav class="header-smart-menu">
     		
     			
