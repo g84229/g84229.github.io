@@ -9,7 +9,7 @@
   <title>GreenDao使用详解 | 高昂的博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="description" content="Android ORM 框架：GreenDao 使用详解（基础篇）">
-<meta name="keywords" content="后端,Java,spring,struts2,ssm,ssh">
+<meta name="keywords" content="安卓,框架,数据库">
 <meta property="og:type" content="article">
 <meta property="og:title" content="GreenDao使用详解">
 <meta property="og:url" content="http://yoursite.com/2019/08/16/GreenDao使用详解/index.html">
@@ -21,7 +21,7 @@
 <meta property="og:image" content="http://ww1.sinaimg.cn/large/005vpRiVly1g61ejwcgi8j30b20fja9y.jpg">
 <meta property="og:image" content="http://ww1.sinaimg.cn/large/005vpRiVly1g61ek8eqe4j30aq0fq3ym.jpg">
 <meta property="og:image" content="http://ww1.sinaimg.cn/large/005vpRiVly1g61eld0rmhj30lf0ondg6.jpg">
-<meta property="og:updated_time" content="2019-08-16T04:41:17.964Z">
+<meta property="og:updated_time" content="2019-08-16T13:49:57.791Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="GreenDao使用详解">
 <meta name="twitter:description" content="Android ORM 框架：GreenDao 使用详解（基础篇）">
@@ -233,7 +233,7 @@
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">MyApp myApp = (MyApp) getApplication();</span><br><span class="line">DaoSession daoSession =  myApp.getDaoSession();</span><br><span class="line">UserDao userDao = daoSession.getUserDao();复制代码</span><br></pre></td></tr></table></figure>
 
 <p>5, 保存记录</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">User user = new User();</span><br><span class="line">user.setUserId(1);</span><br><span class="line">user.setName(&quot;小明&quot;);</span><br><span class="line">user.setAge(16);</span><br><span class="line"></span><br><span class="line"> userDao.insert(user);</span><br><span class="line">User user = new User();</span><br><span class="line">user.setUserId(1);</span><br><span class="line">user.setName(&quot;小明&quot;);</span><br><span class="line">user.setAge(16);</span><br><span class="line"></span><br><span class="line">//插入或者替换</span><br><span class="line">userDao.insertOrReplace(user);</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">User user = new User();</span><br><span class="line">user.setUserId(1);</span><br><span class="line">user.setName(&quot;小明&quot;);</span><br><span class="line">user.setAge(16);</span><br><span class="line"></span><br><span class="line">userDao.insert(user);</span><br><span class="line">User user = new User();</span><br><span class="line">user.setUserId(1);</span><br><span class="line">user.setName(&quot;小明&quot;);</span><br><span class="line">user.setAge(16);</span><br><span class="line"></span><br><span class="line">//插入或者替换</span><br><span class="line">userDao.insertOrReplace(user);</span><br></pre></td></tr></table></figure>
 
 <p>5, 删除记录</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">public void delete(User user)&#123;</span><br><span class="line">    userDao.delete(user);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">或者</span><br><span class="line"></span><br><span class="line">public void deleteByUserId(long userid)&#123;</span><br><span class="line">     userDao.deleteByKey(1L);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
@@ -288,6 +288,25 @@
     <div class="article-info article-info-index">
       
       
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">安卓</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">框架</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">数据库</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
       
 
       
@@ -491,6 +510,46 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
             <input type="checkbox" q-on="click:toggleTag(e)" q-attr="checked:showTags">
           </label>
           <ul class="article-tag-list" q-show="showTags">
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">安卓</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">框架</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">数据库</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">java</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">博客</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">基础</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">sql</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">技巧</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">工具</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">vim</a>
+              </li>
             
             <div class="clearfix"></div>
           </ul>
