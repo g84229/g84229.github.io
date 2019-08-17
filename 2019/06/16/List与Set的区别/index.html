@@ -16,7 +16,7 @@
 <meta property="og:site_name" content="高昂的博客">
 <meta property="og:description" content="Set,List,Map的区别">
 <meta property="og:locale" content="ch">
-<meta property="og:updated_time" content="2019-08-16T13:48:00.357Z">
+<meta property="og:updated_time" content="2019-08-17T06:37:05.566Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="java中List与Set的区别">
 <meta name="twitter:description" content="Set,List,Map的区别">
@@ -198,10 +198,10 @@
 <p>Collection：List、Set<br>Map：HashMap、HashTable</p>
 <h2 id="1-1-Collection接口"><a href="#1-1-Collection接口" class="headerlink" title="1.1 Collection接口"></a>1.1 Collection接口</h2><p>Collection是最基本的集合接口，声明了适用于JAVA集合（只包括Set和List）的通用方法。 Set 和List 都继承了Conllection,Map。</p>
 <p>### </p>
-<h3 id="1-1-1-Collection接口的方法："><a href="#1-1-1-Collection接口的方法：" class="headerlink" title="1.1.1  Collection接口的方法："></a>1.1.1  Collection接口的方法：</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">boolean add(Object o)      ：向集合中加入一个对象的引用  void clear()：删除集合中所有的对象，即不再持有这些对象的引用  boolean isEmpty()    ：判断集合是否为空  boolean contains(Object o) ： 判断集合中是否持有特定对象的引用  Iterartor iterator()  ：返回一个Iterator对象，可以用来遍历集合中的元素  boolean remove(Object o) ：从集合中删除一个对象的引用  int size()       ：返回集合中元素的数目  Object[] toArray()    ： 返回一个数组，该数组中包括集合中的所有元素</span><br></pre></td></tr></table></figure>
+<h3 id="1-1-1-Collection接口的方法："><a href="#1-1-1-Collection接口的方法：" class="headerlink" title="1.1.1  Collection接口的方法："></a>1.1.1  Collection接口的方法：</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">boolean add(Object o)      ：向集合中加入一个对象的引用  </span><br><span class="line">void clear()：删除集合中所有的对象，即不再持有这些对象的引用 </span><br><span class="line">boolean isEmpty()    ：判断集合是否为空  </span><br><span class="line">boolean contains(Object o) ： 判断集合中是否持有特定对象的引用 </span><br><span class="line">Iterartor iterator()  ：返回一个Iterator对象，可以用来遍历集合中的元素 </span><br><span class="line">boolean remove(Object o) ：从集合中删除一个对象的引用  </span><br><span class="line">int size()       ：返回集合中元素的数目  </span><br><span class="line">Object[] toArray()    ： 返回一个数组，该数组中包括集合中的所有元素</span><br></pre></td></tr></table></figure>
 
 <p>关于：Iterator() 和toArray() 方法都用于集合的所有的元素，前者返回一个Iterator对象，后者返回一个包含集合中所有元素的数组。</p>
-<h3 id="1-1-2-Iterator接口声明了如下方法："><a href="#1-1-2-Iterator接口声明了如下方法：" class="headerlink" title="1.1.2  Iterator接口声明了如下方法："></a>1.1.2  Iterator接口声明了如下方法：</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hasNext()：判断集合中元素是否遍历完毕，如果没有，就返回true  next() ：返回下一个元素  remove()：从集合中删除上一个有next()方法返回的元素。</span><br></pre></td></tr></table></figure>
+<h3 id="1-1-2-Iterator接口声明了如下方法："><a href="#1-1-2-Iterator接口声明了如下方法：" class="headerlink" title="1.1.2  Iterator接口声明了如下方法："></a>1.1.2  Iterator接口声明了如下方法：</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">hasNext()：判断集合中元素是否遍历完毕，如果没有，就返回true  </span><br><span class="line">next() ：返回下一个元素  </span><br><span class="line">remove()：从集合中删除上一个有next()方法返回的元素。</span><br></pre></td></tr></table></figure>
 
 <h2 id="1-2-Set-集合"><a href="#1-2-Set-集合" class="headerlink" title="1.2  Set(集合)"></a>1.2  Set(集合)</h2><p>Set是最简单的一种集合。集合中的对象不按特定的方式排序，并且没有重复对象。 Set接口主要实现了两个实现类：</p>
 <ul>
@@ -246,7 +246,7 @@
 <h2 id="1-4-Map-映射"><a href="#1-4-Map-映射" class="headerlink" title="1.4 Map(映射)"></a>1.4 Map(映射)</h2><p>Map 是一种把键对象和值对象映射的集合，它的每一个元素都包含一对键对象和值对象。 Map没有继承于Collection接口 从Map集合中检索元素时，只要给出键对象，就会返回对应的值对象。 </p>
 <p>Map 的常用方法： </p>
 <p>1 添加，删除操作： </p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Object put(Object key, Object value)： 向集合中加入元素     Object remove(Object key)： 删除与KEY相关的元素     void putAll(Map t)：  将来自特定映像的所有元素添加给该映像     void clear()：从映像中删除所有映射</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">Object put(Object key, Object value)： 向集合中加入元素     </span><br><span class="line">Object remove(Object key)： 删除与KEY相关的元素     </span><br><span class="line">void putAll(Map t)：  将来自特定映像的所有元素添加给该映像     </span><br><span class="line">void clear()：从映像中删除所有映射</span><br></pre></td></tr></table></figure>
 
 <p>2 查询操作： </p>
 <p>Object get(Object key)：获得与关键字key相关的值 。Map集合中的键对象不允许重复，也就说，任意两个键对象通过equals()方法比较的结果都是false.，但是可以将任意多个键独享映射到同一个值对象上。 </p>
@@ -548,6 +548,14 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">日常</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">技巧</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">java</a>
               </li>
              
@@ -561,10 +569,6 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color4">sql</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">技巧</a>
               </li>
              
               <li class="article-tag-list-item">
