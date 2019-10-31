@@ -6,19 +6,24 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>Tag: 数据库 | 高昂的博客</title>
+  <title>笔记 | 高昂的博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="南京工程学院16级,致力于Java后端开发">
-<meta name="keywords" content="后端,Java,spring,struts2,ssm,ssh">
-<meta property="og:type" content="website">
-<meta property="og:title" content="高昂的博客">
-<meta property="og:url" content="http://yoursite.com/tags/数据库/index.html">
+  <meta name="description" content="java笔记">
+<meta name="keywords" content="java,基础,笔记">
+<meta property="og:type" content="article">
+<meta property="og:title" content="笔记">
+<meta property="og:url" content="http://yoursite.com/2019/10/31/笔记/index.html">
 <meta property="og:site_name" content="高昂的博客">
-<meta property="og:description" content="南京工程学院16级,致力于Java后端开发">
+<meta property="og:description" content="java笔记">
 <meta property="og:locale" content="ch">
+<meta property="og:image" content="c:%5CUsers%5C%E9%AB%98%E6%98%82%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1569287921545.png">
+<meta property="og:image" content="c:%5CUsers%5C%E9%AB%98%E6%98%82%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1569311273263.png">
+<meta property="og:image" content="http://ww1.sinaimg.cn/large/005vpRiVgy1g7uar3y2toj30xf0d4ta9.jpg">
+<meta property="og:updated_time" content="2019-10-31T06:03:34.654Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="高昂的博客">
-<meta name="twitter:description" content="南京工程学院16级,致力于Java后端开发">
+<meta name="twitter:title" content="笔记">
+<meta name="twitter:description" content="java笔记">
+<meta name="twitter:image" content="c:%5CUsers%5C%E9%AB%98%E6%98%82%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1569287921545.png">
   
     <link rel="alternative" href="/atom.xml" title="高昂的博客" type="application/atom+xml">
   
@@ -154,68 +159,416 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-  
-  
+            <article id="post-笔记" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
     
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2019" class="archive-year">2019</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2019/08/16/GreenDao使用详解/" class="archive-article-date">
-  	<time datetime="2019-08-16T04:27:02.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-08-16</time>
-</a>
-        </div>
-    	 
+      <header class="article-header">
+        
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2019/08/16/GreenDao使用详解/">GreenDao使用详解</a>
+    <h1 class="article-title" itemprop="name">
+      笔记
     </h1>
   
 
-        <div class="article-info info-on-right">
-          
+        
+        <a href="/2019/10/31/笔记/" class="archive-article-date">
+  	<time datetime="2019-10-31T05:58:17.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-10-31</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>java笔记</p>
+<a id="more"></a>
+
+
+
+
+
+
+
+<ol>
+<li><p>clone是浅拷贝</p>
+</li>
+<li><p>没有goto语句,但是goto是保留关键字,不能用</p>
+</li>
+<li><p>String是final类,不能继承</p>
+</li>
+<li><p>重载和重写</p>
+</li>
+<li><p>String是不可变类,不能被更改,两个string相加生成新string</p>
+</li>
+<li><p>Error和exception: </p>
+<ul>
+<li>Error 类一般是指与虚拟机相关的问题,</li>
+<li>Exception 类表示程序可以处理的异常,可以捕获且可80FD恢复</li>
+</ul>
+</li>
+<li><p>常见RuntimeException:</p>
+<ul>
+<li>java.lang.NullPointerException空指针异常</li>
+<li>java.lang.ClassNotFoundException指定的类找不到</li>
+<li>java.lang.NumberFormatException字符串转换为数字异常</li>
+<li>java.lang.IndexOutOfBoundsException 数组角标越界异常</li>
+<li>java.lang.IllegalArgumentException 方法传递参数错误</li>
+<li>java.lang.ClassCastException 数据类型转换异常</li>
+<li>java.lang.NoClassDefFoundException 未找到类定义错误</li>
+<li>SQLException SQL 异常</li>
+<li>java.lang.InstantiationException 实例化异常</li>
+<li>java.lang.NoSuchMethodException 方法不存在异常</li>
+</ul>
+</li>
+<li><p>math.round的原理是在参数上加 0.5然后进行取整</p>
+</li>
+<li><p>数组没有 length()方法，而是有 length 的属性。String 有 length()方法。</p>
+</li>
+<li><p>s1+= 1;相当于 s1 =(short)(s1 + 1);其中有隐含的强制类型转换</p>
+</li>
+<li><p>java基本类型和包装类可以自动拆箱装箱,自动转换</p>
+</li>
+<li><p>如果整型字面量的值在-128 到 127 之间，那么不会 new 新的 Integer 对象，而是直接引用常量池中的     Integer 对象</p>
+</li>
+<li><p>String 类常用方法</p>
+<p><img src="C:%5CUsers%5C%E9%AB%98%E6%98%82%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1569287921545.png" alt="1569287921545"></p>
+</li>
+<li><ul>
+<li>ArrayList 底层结构是数组,底层查询快,增删慢。</li>
+<li>LinkedList 底层结构是链表型的,增删快,查询慢。</li>
+<li>voctor 底层结构是数组 线程安全的,增删慢,查询慢。</li>
+</ul>
+</li>
+<li><ul>
+<li>List 和 Set 是存储单列数据的集合，Map 是存储键和值这样的双列数据的集合；</li>
+<li>List 中存储的数据是有顺序,并且允许重复；</li>
+<li>Map 中存储的数据是没有顺序的，其键是不能重复的，它的值是可以有重复的，Set 中存储的数据是无序的， 且不允许有重复，但元素在集合中的位置由元素的 hashcode 决定，位置是固定的（Set 集合根据 hashcode 来进行数据的存储，所以位置是固定的，但是位置不是用户可以控制的，所以对于用户来说 set 中的元素还是无序的）；</li>
+</ul>
+</li>
+<li><ul>
+<li>List 接口有三个实现类（LinkedList：基于链表实现，链表内存是散乱的，每一个元素存储本身内存地址的同时还存储下一个元素的地址。链表增删快，查找慢；</li>
+<li>ArrayList：基于数组实现，非线程安全的，效率高，便于索引，但不便于插入删除；</li>
+<li>Vector：基于数组实现，线程安全的，效率低）。</li>
+<li>Map 接口有三个实现类（HashMap：基于 hash 表的 Map 接口实现，非线程安全，高效，支持 null 值和 null键；HashTable：线程安全，低效，不支持 null 值和 null 键；LinkedHashMap：是 HashMap 的一个子类，保存了记录的插入顺序；SortMap 接口：TreeMap，能够把它保存的记录根据键排序，默认是键值的升序排序）。</li>
+<li>Set 接口有两个实现类（HashSet：底层是由 HashMap 实现，不允许集合中有重复的值，使用该方式时需要重写 equals()和 hashCode()方法；LinkedHashSet：继承与 HashSet，同时又基于 LinkedHashMap 来进行实现，底层使用的是 LinkedHashMp）。</li>
+</ul>
+</li>
+<li><p>List list = new ArrayList();这句创建了一个 ArrayList 的对象后把上溯到了 List。此时它是一个 List 对象了，有些ArrayList 有但是 List 没有的属性和方法，它就不能再用了。而 ArrayList list=new ArrayList();创建一对象则保留了ArrayList 的所有属性。 所以需要用到 ArrayList 独有的方法的时候不能用前者。实例代码如下：</p>
+<ol>
+<li>List list = new ArrayList();</li>
+<li>ArrayList arrayList = new ArrayList();</li>
+<li>list.trimToSize(); //错误，没有该方法。</li>
+<li>arrayList.trimToSize(); //ArrayList 里有该方法。</li>
+</ol>
+</li>
+<li><p>ThreadLocal 的作用和目的：用于实现线程内的数据共享，即对于相同的程序代码，多个模块在同一个线程中运行时要共享一份数据，而在另外线程中运行时又共享另外一份数据。</p>
+</li>
+<li><ul>
+<li>volatile仅能使用在变量级别；synchronized则可以使用在变量、方法、和类级别的</li>
+<li>volatile仅能实现变量的修改可见性，并不能保证原子性；synchronized则可以保证变量的修改可见性和原子性</li>
+<li>volatile不会造成线程的阻塞； synchronized可能会造成线程的阻塞。</li>
+<li>volatile标记的变量不会被编译器优化；synchronized标记的变量可以被编译器优化</li>
+</ul>
+</li>
+<li><p>wait和sleep的主要区别是调用wait方法时，线程在等待的时候会释放掉它所获得的monitor，但是调用Thread.sleep()方法时，线程在等待的时候仍然会持有monitor或者锁。 另外，Java中的wait方法应在同步代码块中调用，但是sleep方法不需要。</p>
+</li>
+<li><p>常用的线程池:</p>
+<ul>
+<li>newSingleThreadExecutor：创建一个单线程的线程池，此线程池保证所有任务的执行顺序按照任务的提交顺序执行。</li>
+<li>newFixedThreadPool：创建固定大小的线程池，每次提交一个任务就创建一个线程，直到线程达到线程池的最大大小。</li>
+<li>newCachedThreadPool：创建一个可缓存的线程池，此线程池不会对线程池大小做限制，线程池大小完全依赖于操作系统（或者说 JVM）能够创建的最大线程大小。</li>
+<li>newScheduledThreadPool：创建一个大小无限的线程池，此线程池支持定时以及周期性执行任务的需求。</li>
+<li>newSingleThreadExecutor：创建一个单线程的线程池。此线程池支持定时以及周期性执行任务的需求。</li>
+</ul>
+</li>
+<li><ul>
+<li>静态嵌套类：Static Nested Class 是被声明为静态（static）的内部类，它可以不依赖于外部类实例被实例化。</li>
+<li>内部类：需要在外部类实例化后才能实例化，其语法看起来挺诡异的。</li>
+</ul>
+</li>
+<li><p>进程和线程的区别</p>
+<ul>
+<li>进程：具有一定独立功能的程序关于某个数据集合上的一次运行活动，是操作系统进行资源分配和调度的一个独立单位。</li>
+<li>线程：是进程的一个实体，是 cpu 调度和分派的基本单位，是比进程更小的可以独立运行的基本单位。</li>
+<li>特点：线程的划分尺度小于进程，这使多线程程序拥有高并发性，进程在运行时各自内存单元相互独立，线程之间内存共享，这使多线程编程可以拥有更好的性能和用户体验</li>
+<li>注意：多线程编程对于其它程序是不友好的，占据大量 cpu 资源。</li>
+</ul>
+</li>
+<li><ul>
+<li>wait()：使一个线程处于等待（阻塞）状态，并且释放所持有的对象的锁；</li>
+<li>sleep()：使一个正在运行的线程处于睡眠状态，是一个静态方法，调用此方法要处理 InterruptedException 异常；</li>
+<li>notify()：唤醒一个处于等待状态的线程，当然在调用此方法的时候，并不能确切的唤醒某一个等待状态的线程，而是由 JVM 确定唤醒哪个线程，而且与优先级无关；</li>
+<li>notityAll()：唤醒所有处于等待状态的线程，该方法并不是将对象的锁给所有线程，而是让它们竞争，只有获得锁的线程才能进入就绪状态；</li>
+</ul>
+</li>
+<li><p>java的设计模式</p>
+</li>
+<li><p>Java 中对象的引用分为四种级别，这四种级别由高到低依次为：强引用、软引用、弱引用和虚引用。</p>
+</li>
+<li><p>可达性分析 : 所有生成的对象都是一个称为”GC Roots”的根的子树。从 GC Roots 开始向下搜索，搜索所经过的路径称为引用链(Reference Chain)，当一个对象到 GC Roots 没有任何引用链可以到达时，就称这个对象是不可达的（不可引用的），也就是可以被 GC 回收了。</p>
+</li>
+<li><p>http常见状态码:</p>
+<ul>
+<li>200 OK //客户端请求成功</li>
+<li>301 Moved Permanently（永久移除)，请求的 URL 已移走。Response 中应该包含一个 Location URL, 说明资源现在所处的位置</li>
+<li>302 found 重定向</li>
+<li>400 Bad Request //客户端请求有语法错误，不能被服务器所理解</li>
+<li>401 Unauthorized //请求未经授权，这个状态代码必须和 WWW-Authenticate 报头域一起使用</li>
+<li>403 Forbidden //服务器收到请求，但是拒绝提供服务</li>
+<li>404 Not Found //请求资源不存在，eg：输入了错误的 URL</li>
+<li>500 Internal Server Error //服务器发生不可预期的错误</li>
+<li>503 Server Unavailable //服务器当前不能处理客户端的请求，一段时间后可能恢复正常</li>
+</ul>
+</li>
+<li><p>http 中重定向和请求转发的区别？</p>
+<ul>
+<li>本质区别：转发是服务器行为，重定向是客户端行为。 </li>
+<li>重定向特点：两次请求，浏览器地址发生变化，可以访问自己 web 之外的资源，传输的数据会丢失。</li>
+<li>请求转发特点：一次强求，浏览器地址不变，访问的是自己本身的 web 资源，传输的数据不会丢失。</li>
+</ul>
+</li>
+<li><p>Cookie 和 Session 的区别:</p>
+<ul>
+<li>Cookie  是 web 服务器发送给浏览器的一块信息，浏览器会在本地一个文件中给每个 web 服务器存储 cookie。以后浏览器再给特定的 web 服务器发送请求时，同时会发送所有为该服务器存储的 cookie。</li>
+<li>Session 是存储在 web 服务器端的一块信息。session 对象存储特定用户会话所需的属性及配置信息。当用户在应用程序的 Web 页之间跳转时，存储在 Session 对象中的变量将不会丢失，而是在整个用户会话中一直存在下去。</li>
+</ul>
+</li>
+<li><p>jsp 有哪些域对象和内置对象及他们的作用？</p>
+<p>四大域对象：<br>（1）pageContext page 域-指当前页面，在当前 jsp 页面有效，跳到其它页面失效<br>（2）request request 域-指一次请求范围内有效，从 http 请求到服务器处理结束，返回响应的整个过程。</p>
+<pre><code>在这个过程中使用 forward（请求转发）方式跳转多个 jsp，在这些页面里你都可以使用这个变量</code></pre><p>（3）session session 域-指当前会话有效范围，浏览器从打开到关闭过程中，转发、重定向均可以使用<br>（4）application context 域-指只能在同一个 web 中使用，服务器未关闭或者重启，数据就有效</p>
+</li>
+<li><p>常用的Linux命令:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line">列出文件列表：ls 【参数 -a -l】</span><br><span class="line">创建目录和移除目录：mkdir rmdir</span><br><span class="line">用于显示文件后几行内容：tail</span><br><span class="line">打包：tar -xvf</span><br><span class="line">打包并压缩：tar -zcvf</span><br><span class="line">查找字符串：grep</span><br><span class="line">显示当前所在目录：pwd</span><br><span class="line">创建空文件：touch</span><br><span class="line">编辑器：vim vi</span><br><span class="line"></span><br><span class="line">动态打印日志信息：tail –f 日志文件</span><br><span class="line"></span><br><span class="line">关闭进程:</span><br><span class="line">    通常用 ps 查看进程 PID ，用 kill 命令终止进程。</span><br><span class="line">    ps 命令用于查看当前正在运行的进程。</span><br><span class="line">    grep 是搜索</span><br><span class="line">    例如： ps -ef | grep java</span><br><span class="line">    表示查看所有进程里 CMD 是 java 的进程信息。</span><br><span class="line">    ps -aux | grep java</span><br><span class="line">    -aux 显示所有状态</span><br><span class="line">    kill 命令用于终止进程。</span><br><span class="line">    例如： kill -9 [PID]</span><br><span class="line">    -9 表示强迫进程立即停止。</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>Mysql 中四种隔离级别分别是什么</p>
+</li>
+</ol>
+<p><img src="C:%5CUsers%5C%E9%AB%98%E6%98%82%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1569311273263.png" alt="1569311273263"></p>
+<p><strong>读未提交（READ UNCOMMITTED）</strong>：未提交读隔离级别也叫读脏，就是事务可以读取其它事务未提交的数据。</p>
+<p><strong>读已提交（READ COMMITTED）</strong>：在其它数据库系统比如 SQL Server 默认的隔离级别就是提交读，已提交读<br>隔离级别就是在事务未提交之前所做的修改其它事务是不可见的。</p>
+<p><strong>可重复读（REPEATABLE READ）</strong>：保证同一个事务中的多次相同的查询的结果是一致的，比如一个事务一开始<br>查询了一条记录然后过了几秒钟又执行了相同的查询，保证两次查询的结果是相同的，可重复读也是 mysql 的默认隔离级别。</p>
+<p><strong>可串行化（SERIALIZABLE）</strong>：可串行化就是保证读取的范围内没有新的数据插入，比如事务第一次查询得到某个<br>范围的数据，第二次查询也同样得到了相同范围的数据，中间没有新的数据插入到该范围中。</p>
+<ol start="34">
+<li><p>在 java 程序中怎么保证多线程的运行安全？</p>
+<p>线程安全在三个方面体现：</p>
+<ul>
+<li>原子性：提供互斥访问，同一时刻只能有一个线程对数据进行操作，（atomic,synchronized）；</li>
+<li>可见性：一个线程对主内存的修改可以及时地被其他线程看到，（synchronized,volatile）；</li>
+<li>有序性：一个线程观察其他线程中的指令执行顺序，由于指令重排序，该观察结果一般杂乱无序，（happens-before原则）。</li>
+</ul>
+</li>
+<li><p>说一下 synchronized 底层实现原理？</p>
+<ul>
+<li>synchronized可以保证方法或者代码块在运行时，同一时刻只有一个方法可以进入到临界区，同时它还可以保证共享变量的内存可见性。</li>
+<li>Java中每一个对象都可以作为锁，这是synchronized实现同步的基础：</li>
+</ul>
+</li>
+</ol>
+<pre><code>- 普通同步方法，锁是当前实例对象
+- 静态同步方法，锁是当前类的class对象
+- 同步方法块，锁是括号里面的对象</code></pre><ol start="36">
+<li><p>synchronized 和 volatile 的区别是什么？</p>
+<ul>
+<li>volatile本质是在告诉jvm当前变量在寄存器（工作内存）中的值是不确定的，需要从主存中读取； synchronized则是锁定当前变量，只有当前线程可以访问该变量，其他线程被阻塞住。</li>
+<li>volatile仅能使用在变量级别；synchronized则可以使用在变量、方法、和类级别的。</li>
+<li>volatile仅能实现变量的修改可见性，不能保证原子性；而synchronized则可以保证变量的修改可见性和原子性。</li>
+<li>volatile不会造成线程的阻塞；synchronized可能会造成线程的阻塞。</li>
+<li>volatile标记的变量不会被编译器优化；synchronized标记的变量可以被编译器优化</li>
+</ul>
+</li>
+<li><p>synchronized和Lock的区别<img src="http://ww1.sinaimg.cn/large/005vpRiVgy1g7uar3y2toj30xf0d4ta9.jpg" alt="image.png"></p>
+</li>
+<li><p><strong>动态代理是什么？有哪些应用？</strong></p>
+</li>
+</ol>
+<pre><code>动态代理：
+
+
+
+当想要给实现了某个接口的类中的方法，加一些额外的处理。比如说加日志，加事务等。可以给这个类创建一个代理，故名思议就是创建一个新的类，这个类不仅包含原来类方法的功能，而且还在原来的基础上添加了额外处理的新类。这个代理类并不是定义好的，是动态生成的。具有解耦意义，灵活，扩展性强。
+
+
+
+动态代理的应用：
+
+
+
+- Spring的AOP
+- 加事务
+- 加权限
+- 加日志
+
+
+
+怎么实现动态代理？
+
+
+
+首先必须定义一个接口，还要有一个InvocationHandler(将实现接口的类的对象传递给它)处理类。再有一个工具类Proxy(习惯性将其称为代理类，因为调用他的newInstance()可以产生代理对象,其实他只是一个产生代理对象的工具类）。利用到InvocationHandler，拼接代理类源码，将其编译生成代理类的二进制码，利用加载器加载，并将其实例化产生代理对象，最后返回。</code></pre><ol start="39">
+<li><p>数据库三大范式:</p>
+<p>一般地，在进行数据库设计时，应遵循三大原则，也就是我们通常说的三大范式，即第一范式要求确保表中每列的原子性，也就是不可拆分；第二范式要求确保表中每列与主键相关，而不能只与主键的某部分相关（主要针对联合主键），主键列与非主键列遵循完全函数依赖关系，也就是完全依赖；第三范式确保主键列之间没有传递函数依赖关系，也就是消除传递依赖。</p>
+</li>
+</ol>
+
+      
+
+      
+        <div class="page-reward">
+          <a href="javascript:;" class="page-reward-btn tooltip-top">
+            <div class="tooltip tooltip-east">
+            <span class="tooltip-item">
+              赏
+            </span>
+            <span class="tooltip-content">
+              <span class="tooltip-text">
+                <span class="tooltip-inner">
+                  <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你请我吃糖果<i class="icon icon-quo-right"></i></p>
+                  <div class="reward-box">
+                    
+                    
+                  </div>
+                </span>
+              </span>
+            </span>
+          </div>
+          </a>
+        </div>
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
 	<div class="article-tag tagcloud">
 		<i class="icon-price-tags icon"></i>
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">安卓</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">java</a>
         		</li>
       		 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">框架</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">基础</a>
         		</li>
       		 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">数据库</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">笔记</a>
         		</li>
       		
 		</ul>
 	</div>
 
-          
+      
 
+      
+
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
         </div>
-        <div class="clearfix"></div>
-    </header>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2019/10/31/笔记/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
+
+  
+<nav id="article-nav">
   
   
-    </div></section>
+    <a href="/2019/09/17/Spring入门笔记/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">Spring入门笔记</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+        <div class="toc-container tooltip-left">
+            <i class="icon-font icon-category"></i>
+            <div class="tooltip tooltip-east">
+                <span class="tooltip-item">
+                </span>
+                <span class="tooltip-content">
+                    <div class="toc-article">
+                    目录，不存在的…
+                    </div>
+                </span>
+            </div>
+        </div>
+        
+    </div>
+</aside>
+
+
+
+  
+  
   
 
-    
+  
+
+  
+
+  
 
 
           </div>
@@ -238,9 +591,9 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: false,
+		isPost: true,
 		isArchive: false,
-		isTag: true,
+		isTag: false,
 		isCategory: false,
 		open_in_new: false,
 		toc_hide_index: true,
